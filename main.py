@@ -1,0 +1,2 @@
+a = 'HCH'
+print(a)
