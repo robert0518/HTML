@@ -1,2 +1,2 @@
-a = 'HCH'
+a = 'Ron is idiot'
 print(a)
