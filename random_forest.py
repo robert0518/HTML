@@ -14,9 +14,9 @@ import seaborn as sns
 warnings.filterwarnings('ignore')
 
 # 1. Load Data
-train_file_path = 'train_split.csv'
-valid_file_path = 'valid_split.csv'
-test_file_path = 'same_season_test_data.csv'
+train_file_path = 'stage2_train_split.csv'
+valid_file_path = 'stage2_valid_split.csv'
+test_file_path = 'stage2_data/2024_test_data.csv'
 
 data = pd.read_csv(train_file_path)
 valid_data = pd.read_csv(valid_file_path)
@@ -141,7 +141,7 @@ plt.tight_layout()
 plt.show()
 
 # Select top N features (e.g., top 20)
-top_n = 30
+top_n = 20
 top_features = feature_importances.head(top_n).index.tolist()
 
 print(f"Top {top_n} features selected based on feature importances.")
@@ -215,7 +215,7 @@ output = pd.DataFrame({
     'home_team_win': test_predictions.astype(bool)
 })
 
-output_file = 'final_test_predictions.csv'
+output_file = 'final_test_predictions_stage2.csv'
 output.to_csv(output_file, index=False)
 print(f"Test predictions saved to '{output_file}'.")
 
