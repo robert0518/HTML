@@ -1,0 +1,164 @@
+  1 id
+  2 home_team_abbr
+  3 away_team_abbr
+  4 is_night_game
+  5 home_pitcher
+  6 away_pitcher
+  7 home_team_rest
+  8 away_team_rest
+  9 home_pitcher_rest
+ 10 away_pitcher_rest
+ 11 season
+ 12 home_batting_batting_avg_10RA
+ 13 home_batting_onbase_perc_10RA
+ 14 home_batting_onbase_plus_slugging_10RA
+ 15 home_batting_leverage_index_avg_10RA
+ 16 home_batting_RBI_10RA
+ 17 away_batting_batting_avg_10RA
+ 18 away_batting_onbase_perc_10RA
+ 19 away_batting_onbase_plus_slugging_10RA
+ 20 away_batting_leverage_index_avg_10RA
+ 21 away_batting_RBI_10RA
+ 22 home_pitching_earned_run_avg_10RA
+ 23 home_pitching_SO_batters_faced_10RA
+ 24 home_pitching_H_batters_faced_10RA
+ 25 home_pitching_BB_batters_faced_10RA
+ 26 away_pitching_earned_run_avg_10RA
+ 27 away_pitching_SO_batters_faced_10RA
+ 28 away_pitching_H_batters_faced_10RA
+ 29 away_pitching_BB_batters_faced_10RA
+ 30 home_pitcher_earned_run_avg_10RA
+ 31 home_pitcher_SO_batters_faced_10RA
+ 32 home_pitcher_H_batters_faced_10RA
+ 33 home_pitcher_BB_batters_faced_10RA
+ 34 away_pitcher_earned_run_avg_10RA
+ 35 away_pitcher_SO_batters_faced_10RA
+ 36 away_pitcher_H_batters_faced_10RA
+ 37 away_pitcher_BB_batters_faced_10RA
+ 38 home_team_season
+ 39 away_team_season
+ 40 home_team_errors_mean
+ 41 home_team_errors_std
+ 42 home_team_errors_skew
+ 43 away_team_errors_mean
+ 44 away_team_errors_std
+ 45 away_team_errors_skew
+ 46 home_team_spread_mean
+ 47 home_team_spread_std
+ 48 home_team_spread_skew
+ 49 away_team_spread_mean
+ 50 away_team_spread_std
+ 51 away_team_spread_skew
+ 52 home_team_wins_mean
+ 53 home_team_wins_std
+ 54 home_team_wins_skew
+ 55 away_team_wins_mean
+ 56 away_team_wins_std
+ 57 away_team_wins_skew
+ 58 home_batting_batting_avg_mean
+ 59 home_batting_batting_avg_std
+ 60 home_batting_batting_avg_skew
+ 61 home_batting_onbase_perc_mean
+ 62 home_batting_onbase_perc_std
+ 63 home_batting_onbase_perc_skew
+ 64 home_batting_onbase_plus_slugging_mean
+ 65 home_batting_onbase_plus_slugging_std
+ 66 home_batting_onbase_plus_slugging_skew
+ 67 home_batting_leverage_index_avg_mean
+ 68 home_batting_leverage_index_avg_std
+ 69 home_batting_leverage_index_avg_skew
+ 70 home_batting_wpa_bat_mean
+ 71 home_batting_wpa_bat_std
+ 72 home_batting_wpa_bat_skew
+ 73 home_batting_RBI_mean
+ 74 home_batting_RBI_std
+ 75 home_batting_RBI_skew
+ 76 away_batting_batting_avg_mean
+ 77 away_batting_batting_avg_std
+ 78 away_batting_batting_avg_skew
+ 79 away_batting_onbase_perc_mean
+ 80 away_batting_onbase_perc_std
+ 81 away_batting_onbase_perc_skew
+ 82 away_batting_onbase_plus_slugging_mean
+ 83 away_batting_onbase_plus_slugging_std
+ 84 away_batting_onbase_plus_slugging_skew
+ 85 away_batting_leverage_index_avg_mean
+ 86 away_batting_leverage_index_avg_std
+ 87 away_batting_leverage_index_avg_skew
+ 88 away_batting_wpa_bat_mean
+ 89 away_batting_wpa_bat_std
+ 90 away_batting_wpa_bat_skew
+ 91 away_batting_RBI_mean
+ 92 away_batting_RBI_std
+ 93 away_batting_RBI_skew
+ 94 home_pitching_earned_run_avg_mean
+ 95 home_pitching_earned_run_avg_std
+ 96 home_pitching_earned_run_avg_skew
+ 97 home_pitching_SO_batters_faced_mean
+ 98 home_pitching_SO_batters_faced_std
+ 99 home_pitching_SO_batters_faced_skew
+100 home_pitching_H_batters_faced_mean
+101 home_pitching_H_batters_faced_std
+102 home_pitching_H_batters_faced_skew
+103 home_pitching_BB_batters_faced_mean
+104 home_pitching_BB_batters_faced_std
+105 home_pitching_BB_batters_faced_skew
+106 home_pitching_leverage_index_avg_mean
+107 home_pitching_leverage_index_avg_std
+108 home_pitching_leverage_index_avg_skew
+109 home_pitching_wpa_def_mean
+110 home_pitching_wpa_def_std
+111 home_pitching_wpa_def_skew
+112 away_pitching_earned_run_avg_mean
+113 away_pitching_earned_run_avg_std
+114 away_pitching_earned_run_avg_skew
+115 away_pitching_SO_batters_faced_mean
+116 away_pitching_SO_batters_faced_std
+117 away_pitching_SO_batters_faced_skew
+118 away_pitching_H_batters_faced_mean
+119 away_pitching_H_batters_faced_std
+120 away_pitching_H_batters_faced_skew
+121 away_pitching_BB_batters_faced_mean
+122 away_pitching_BB_batters_faced_std
+123 away_pitching_BB_batters_faced_skew
+124 away_pitching_leverage_index_avg_mean
+125 away_pitching_leverage_index_avg_std
+126 away_pitching_leverage_index_avg_skew
+127 away_pitching_wpa_def_mean
+128 away_pitching_wpa_def_std
+129 away_pitching_wpa_def_skew
+130 home_pitcher_earned_run_avg_mean
+131 home_pitcher_earned_run_avg_std
+132 home_pitcher_earned_run_avg_skew
+133 home_pitcher_SO_batters_faced_mean
+134 home_pitcher_SO_batters_faced_std
+135 home_pitcher_SO_batters_faced_skew
+136 home_pitcher_H_batters_faced_mean
+137 home_pitcher_H_batters_faced_std
+138 home_pitcher_H_batters_faced_skew
+139 home_pitcher_BB_batters_faced_mean
+140 home_pitcher_BB_batters_faced_std
+141 home_pitcher_BB_batters_faced_skew
+142 home_pitcher_leverage_index_avg_mean
+143 home_pitcher_leverage_index_avg_std
+144 home_pitcher_leverage_index_avg_skew
+145 home_pitcher_wpa_def_mean
+146 home_pitcher_wpa_def_std
+147 home_pitcher_wpa_def_skew
+148 away_pitcher_earned_run_avg_mean
+149 away_pitcher_earned_run_avg_std
+150 away_pitcher_earned_run_avg_skew
+151 away_pitcher_SO_batters_faced_mean
+152 away_pitcher_SO_batters_faced_std
+153 away_pitcher_SO_batters_faced_skew
+154 away_pitcher_H_batters_faced_mean
+155 away_pitcher_H_batters_faced_std
+156 away_pitcher_H_batters_faced_skew
+157 away_pitcher_BB_batters_faced_mean
+158 away_pitcher_BB_batters_faced_std
+159 away_pitcher_BB_batters_faced_skew
+160 away_pitcher_leverage_index_avg_mean
+161 away_pitcher_leverage_index_avg_std
+162 away_pitcher_leverage_index_avg_skew
+163 away_pitcher_wpa_def_mean
+164 away_pitcher_wpa_def_std
