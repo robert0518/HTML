@@ -99,7 +99,7 @@ int main() {
                         } else {
                             fprintf(out, "%s,", name);
                         }
-                    }
+                    } else { fprintf(out, ","); }
                 }
                 name = comma + 1;
                 comma = strchr(name, ',');
