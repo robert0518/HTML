@@ -4,6 +4,7 @@ from sklearn.impute import KNNImputer
 from sklearn.metrics import classification_report, accuracy_score
 from sklearn.model_selection import GridSearchCV
 import pandas as pd
+import numpy as np
 
 # Load training, validation, and test data
 train_file_path = 'stage2_train_split.csv'
@@ -30,8 +31,14 @@ def linear_weighting(data):
     print(f"Max days: {max_days}")
     return (1+(data['date'] - data['date'].min()).dt.days / max_days)
 
+def time_decay_weighting(data, alpha):
+    # Calculate the number of days `d` from January 1, 2024
+    reference_date = pd.Timestamp('2024-01-01')
+    return np.exp(-alpha*(data['date'] - reference_date).dt.days)
+    
 
-sample_weights = linear_weighting(train_data)
+
+sample_weights = time_decay_weighting(train_data, 0.0001)
 print(f"Sample weights: {sample_weights}")
 
 # Prepare features (one-hot encoding)

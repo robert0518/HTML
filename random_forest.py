@@ -22,6 +22,13 @@ data = pd.read_csv(train_file_path)
 valid_data = pd.read_csv(valid_file_path)
 test_data = pd.read_csv(test_file_path)
 
+def time_decay_weighting(data, alpha):
+    # Calculate the number of days `d` from January 1, 2024
+    reference_date = pd.Timestamp('2024-01-01')
+    return np.exp(-alpha*(data['date'] - reference_date).dt.days)
+
+sample_weights = time_decay_weighting(data, 0.0001)
+
 # 2. Preprocess Data
 
 # Convert target to integer
@@ -122,8 +129,12 @@ rf_model = RandomForestClassifier(
     max_depth=10
 )
 
+    
+
+
+
 # Fit the model on the entire training set
-rf_model.fit(X_train, y_train)
+rf_model.fit(X_train, y_train, sample_weight=sample_weights)
 
 print('Model Finish Training.')
 
@@ -191,7 +202,7 @@ train_accuracy = accuracy_score(y_train, fold_predictions)
 print(f"Cross-Validated Training Accuracy: {train_accuracy:.4f}")
 
 # Retrain the model on the entire training set with selected features
-rf_model.fit(X_train_selected, y_train)
+rf_model.fit(X_train_selected, y_train, sample_weight=sample_weights)
 
 # 8. Evaluate on the Validation Set
 valid_pred = rf_model.predict(X_valid_selected)
